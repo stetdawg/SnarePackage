@@ -1,0 +1,104 @@
+@-ms-viewport{
+  width: device-width;
+}
+/*
+# The Mad CSScientist's CSS Reset
+written by Tommy Hodgins: https://gist.github.com/tomhodgins/c4988b9d9878763ae861
+## Usage
+Include this CSS as a sensible starting point to minimize the differences between browsers, and to enable nicer rendering defaults
+    <link href=preset.css rel=stylesheet>
+*/
+* {
+box-sizing: border-box;
+text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-kerning: auto;}
+html {
+font-size: 10pt;
+line-height: 1.4;
+font-weight: 400;
+font-family: 'Helvetica', sans-serif;
+-webkit-text-size-adjust: 100%;
+background: #000000;}
+body {
+margin: 0;
+padding: 0;}
+#navbar{
+position: absolute;
+background: #000000;
+padding-bottom: -180px;
+/*display: none;*/}
+
+ /*No clue what this actually does
+#navbar::after{
+content: '';
+display: block;
+clear: both;
+margin-right: 0;}*/
+
+
+#navbar ul {
+margin: 0;
+padding-left: 100px;
+list-style: none;
+float: right;
+
+}
+
+#navbar li{
+display: inline-block;
+margin-left: 70px;
+padding-top: 4px;
+}
+
+#navbar a{
+background-color: aqua;
+height: 30px;
+width: 100px;
+}
+
+
+#content a{
+border: 0px;
+margin: 0;
+display: block;
+line-height:0;}
+
+img.logo {
+color:#ffffff;
+border: 0;
+padding: 0;
+margin-left: 30px;
+margin-top: 15px;
+margin-bottom: 0;
+width: 150px;
+height: 100px;}
+
+#home{
+text-align: center;
+font-size: x-large;}
+
+#land{
+display: block;
+margin: 0;}
+
+.video-container {
+margin: 40px auto;
+outline: 1px solid #dadada;
+width: 75%;
+}
+
+.video-container video{
+display: block;
+width: 100%;}	
+
+video {
+clip-path: url(#clip-00);
+}
+
+.clipping-paths{
+width: 0;
+height: 0;
+position: absolute;}
+
